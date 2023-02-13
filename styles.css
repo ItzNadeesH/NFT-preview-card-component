@@ -68,13 +68,14 @@ main {
     height: 48px;
 }
 
-h3 {
+h1 {
     color: hsl(0, 0%, 100%);
     font-weight: 600;
+    font-size: 20px;
     margin-top: 25px;
 }
 
-h3:hover {
+h1:hover {
     color: hsl(178, 100%, 50%);
     cursor: pointer;
     transition: 0.15s;
