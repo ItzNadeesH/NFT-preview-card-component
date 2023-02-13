@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Outfit;
+    font-size: 18px;
+}
+
+main {
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    background-color: hsl(216, 50%, 16%);
+    width: 350px;
+    height: 580px;
+    border-radius: 12px;
+    transition: 0.4s;
+    box-shadow: 10px 10px 8px #000000;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+}
+
+.ntf-img {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.card a {
+    display: flex;
+    position: relative;
+}
+
+.card a:hover .view{
+    opacity: 1;
+}
+
+.view {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.view-icon {
+    width: 48px;
+    height: 48px;
+}
+
+h3 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+h3:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.discription {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    margin-top: 20px;
+    transition: 0.4s;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.left-side {
+    color: hsl(178, 100%, 50%);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.right-side {
+    color: hsl(215, 51%, 70%);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.clock-icon {
+    height: 16px;
+    width: 16px;
+    margin-right: 5px;
+}
+
+.icon {
+    height: 18px;
+    margin-right: 5px;
+}
+
+.line {
+    margin-top: 20px;
+    height: 1px;
+    background-color: hsl(215, 32%, 27%);
+    transition: 0.4s;
+}
+
+.creater {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.avatar {
+    width: 36px;
+    height: 36px;
+    border: white solid 1px;
+    border-radius: 50%;
+}
+
+.author {
+    margin-left: 14px;
+    color: hsl(215, 51%, 70%);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.author span {
+    color: white;
+}
+
+.author span:hover {
+    color: hsl(178, 100%, 50%);
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+@media (max-width: 640px) {
+    .card-container {
+        width: 300px;
+        height: 525px;
+        border-radius: 12px;
+    }
+    .discription {
+        font-size: 16px;
+    }
+    .ntf-img {
+        height: 250px;
+    }
+}
